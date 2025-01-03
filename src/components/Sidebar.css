@@ -1,0 +1,111 @@
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle:hover {
+    background-color: #2d2d2d;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    padding: 80px 20px 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.genres-section {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.genres-section h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.genres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.genres-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.genres-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.genres-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.genres-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.genre-button {
+    text-align: left;
+    padding: 12px 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 1em;
+}
+
+.genre-button:hover {
+    background-color: #2d2d2d;
+    padding-left: 20px;
+}
+
+.genre-button.active {
+    background-color: #4CAF50;
+    padding-left: 20px;
+} 
