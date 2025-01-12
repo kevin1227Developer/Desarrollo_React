@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+# React Cine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+**React Cine** es una aplicación web construida con React que permite a los usuarios explorar películas populares, buscar películas por género y agregar películas a una lista de favoritos. La aplicación utiliza la API de TMDB (The Movie Database) para obtener información sobre las películas.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- **Exploración de películas**: Navega a través de una lista de películas populares.
+- **Búsqueda de películas**: Busca películas por título.
+- **Favoritos**: Agrega y elimina películas de tu lista de favoritos.
+- **Detalles de la película**: Muestra información detallada sobre cada película, incluyendo sinopsis, calificación y cartel.
+- **Interfaz responsiva**: La aplicación se adapta a diferentes tamaños de pantalla.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologías Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipado estático.
+- **CSS**: Para el estilo de la aplicación.
+- **Axios**: Para realizar solicitudes HTTP a la API de TMDB.
+- **Framer Motion**: Para animaciones en la interfaz de usuario.
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
 
-### `npm run build`
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/react_cine.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navega al directorio del proyecto:
+   ```bash
+   cd react_cine
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+La aplicación se abrirá en [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Uso
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Al abrir la aplicación, verás una lista de películas populares.
+- Puedes buscar películas utilizando la barra de búsqueda.
+- Haz clic en una película para ver más detalles.
+- Agrega películas a tus favoritos haciendo clic en el botón de estrella.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Pruebas
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para ejecutar las pruebas de la aplicación, utiliza el siguiente comando:
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Esto ejecutará el conjunto de pruebas configurado con Jest y React Testing Library.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Problemas Conocidos
+
+- **Problema de carga lenta**: En algunas conexiones lentas, la carga de las imágenes puede ser más lenta de lo esperado.
+- **Errores de API**: Si la API de TMDB está inactiva, la aplicación puede no mostrar datos de películas.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva característica'`).
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
+5. Abre un Pull Request.
+
+## Guía de Estilo de Código
+
+- Usa **camelCase** para nombres de variables y funciones.
+- Usa **PascalCase** para nombres de componentes.
+- Mantén un formato consistente en el código, utilizando herramientas como Prettier o ESLint.
+- Escribe comentarios claros y concisos para explicar partes complejas del código.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de (alejandroclaro277@gmail.com).
