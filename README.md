@@ -26,7 +26,7 @@ Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/react_cine.git
+   git clone https://github.com/kevin1227Developer/Desarrollo_React.git
    ```
 
 2. Navega al directorio del proyecto:
